@@ -1,0 +1,63 @@
+body { 
+    background: linear-gradient(rgb(132, 0, 255),rgb(255, 208, 0)); 
+    height: 100vh; 
+} 
+ 
+ 
+#GameBoard {  
+display:grid; 
+grid-template-columns: repeat(3, 59px); 
+gap: 15px;  
+background-color: rgba(59, 252, 0, 0.596); 
+transition: 300ms; 
+border-radius:32px ; 
+width: 350px;  
+margin: 0 auto; 
+justify-content: space-between; 
+padding-top: 30px; 
+padding-bottom: 30px; 
+} 
+.cell { 
+    background-color: rgb(143, 0, 148); 
+    transition: 300ms; 
+} 
+.cell:hover { 
+    background-color: rgb(226, 121, 79); 
+    transition: 300ms; 
+} 
+.cell:active{ 
+    background-color: rgb(98, 114, 255); 
+} 
+ 
+.cellHide{ 
+    color: transparent; 
+    user-select: none; 
+} 
+ 
+ 
+.cellShown{ 
+    color: black; 
+    user-select: auto; 
+} 
+button:hover { 
+    transform:scale(0.9) ; 
+    transition: 500ms; 
+} 
+button:active{  
+    transform:scale(0.8) ; 
+    transition: 500ms; 
+} 
+#timer { 
+    position: absolute; 
+    top: 100px; 
+    left: 20px; 
+    font-size: 32px; 
+} 
+#points { 
+    position:absolute; 
+    top: 150px; 
+    left: 20px ; 
+    font-size:  32px; 
+    color: rgb(155, 46, 55); 
+ 
+}
